@@ -40,6 +40,12 @@
 </script>
 </head>
 <body class="antialiased overflow-x-hidden">
+    <!-- SEO Header Section -->
+    <div class="sr-only">
+        <h1>Metal Roof Cost Calculator</h1>
+        <p>Estimate the total investment for your professional metal roofing project. Our advanced calculator provides high-precision material takeoffs, labor estimates, and a complete Bill of Materials (BOM) for homeowners and contractors using 2025 market rates.</p>
+    </div>
+
     <div id="root"></div>
 
     <script type="text/babel">
@@ -386,6 +392,34 @@
             </div>
         );
 
+        const SEOContentSection = () => (
+            <div className="bg-white rounded-3xl p-10 md:p-12 border border-slate-200 card-shadow animate-in space-y-12 text-slate-700">
+                <section>
+                    <h2 className="text-3xl font-black text-slate-900 mb-6">How Much Does a Metal Roof Cost?</h2>
+                    <div className="space-y-4 text-base leading-relaxed">
+                        <p>Determining the total cost of a metal roof depends on several factors including roof pitch, material gauge, and the complexity of the roof shape. On average, homeowners can expect to invest between $8,000 and $25,000 for a standard residential property. This price includes high-quality metal panels, synthetic underlayment, and professional installation. While the initial investment is higher than traditional materials, the long-term durability and energy savings provide a significant return on investment over the 40 to 70-year lifespan of the roof.</p>
+                        <p>Additionally, regional labor rates and current steel or aluminum market prices play a role. Our calculator uses updated 2025 data to provide you with a realistic budget, ensuring there are no surprises during the construction phase. By selecting different material grades, you can see how varying quality levels affect the total project bottom line.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 className="text-3xl font-black text-slate-900 mb-6">Standing Seam Metal Roof Cost per Square Foot</h2>
+                    <div className="space-y-4 text-base leading-relaxed">
+                        <p>Standing seam metal roofing is considered the gold standard in residential roofing. Costing between $12 and $18 per square foot installed, it features a concealed fastener system that eliminates the risk of leaks associated with exposed screws. The smooth, clean lines offer a modern aesthetic that enhances curb appeal while providing superior protection against wind, snow, and rain.</p>
+                        <p>When calculating per square foot costs, it is important to factor in "waste"—the extra material needed for overlaps and cutting around hips and valleys. Our pro-calculator automatically adjusts for these variables. While standing seam requires a higher skill level for installation, its zero-maintenance profile makes it the most cost-effective solution over the life of the building compared to corrugated or ribbed metal panels.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 className="text-3xl font-black text-slate-900 mb-6">Metal Roof vs Shingle Roof Cost</h2>
+                    <div className="space-y-4 text-base leading-relaxed">
+                        <p>The primary difference between metal and asphalt shingle roofs is the "Life Cycle Cost." Asphalt shingles are cheaper upfront, usually costing $4 to $7 per square foot, but they often require replacement every 15 to 20 years. In contrast, a metal roof is a "once-in-a-lifetime" purchase. Over a 50-year period, a homeowner might replace a shingle roof three times, whereas a single metal roof would still be in excellent condition.</p>
+                        <p>Beyond longevity, metal roofs offer better fire resistance, higher wind ratings, and are 100% recyclable. They also reflect solar radiant heat, which can reduce cooling costs by up to 25%. When you compare the total cost of ownership including maintenance, energy savings, and insurance premiums, metal roofs frequently emerge as the smarter financial choice for long-term homeowners.</p>
+                    </div>
+                </section>
+            </div>
+        );
+
         /** --- 3. Main Application --- **/
 
         const App = () => {
@@ -457,6 +491,7 @@
                             <SOPSection />
                             <FAQSection />
                             <DiagramSection />
+                            <SEOContentSection />
                             <div className="text-center pt-12 border-t border-slate-100">
                                 <p className="text-xs text-slate-400 font-bold uppercase tracking-[0.3em]">RoofQuant Pro &copy; 2025 Professional Roofing Analysis</p>
                             </div>
